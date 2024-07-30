@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlet</display-name>
+  
+ <!--  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list> 
+  불필요한 내용 삭제-->
+  
+  
+  <servlet>
+  	<servlet-name>hellohello</servlet-name>
+  	<servlet-class>com.nyeong.servlet.hello.HelloController</servlet-class>
+  	<!-- ctrl 눌러서 오타 확인 -->
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>hellohello</servlet-name>
+  	<!-- 위에 hellohello와 매칭시키기 -->
+  	<url-pattern>/hello</url-pattern> 
+  	<!-- 무조건 /로 시작 -->
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>ex01</servlet-name>
+  	<servlet-class>com.nyeong.servlet.servlet.ex.Ex01Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ex01</servlet-name>
+  	<url-pattern>/servlet/ex01</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>test01</servlet-name>
+  	<servlet-class>com.nyeong.servlet.servlet.test.Test01Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>test01</servlet-name>
+  	<url-pattern>/servlet/test01</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>test02</servlet-name>
+  	<servlet-class>com.nyeong.servlet.servlet.test.Test02Controller</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>test02</servlet-name>
+  	<url-pattern>/servlet/test02</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
