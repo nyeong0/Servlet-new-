@@ -24,7 +24,7 @@
 	%>
 	
 	<h3>합계 : <%= sum %></h3>
-	<input type="text" value="<%=sum %>">
+	<input type="text" value="<%=sum %>"><br>
 	
 	<%= sum*2 %>
 	
