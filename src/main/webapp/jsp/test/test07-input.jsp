@@ -13,7 +13,7 @@
 		<form method="post" action="/jsp/test/test07.jsp">
 			<div class="d-flex">
 				<input type="text" class="form-control col-4" name="menu">
-				<label><input type="checkbox">4점이하 제외</label>
+				<label><input type="checkbox" name="option">4점이하 제외</label>
 			</div>
 			<button type="submit" class="btn btn-success">검색</button>
 		</form>
